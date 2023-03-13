@@ -317,7 +317,7 @@ main .scroll img {
     gap: 20px;
 }
 
-.advantages-items li img{
+.advantages-items li img {
     height: 100px;
     width: auto;
 }
@@ -330,4 +330,197 @@ main .scroll img {
 
 .advantages-items li .desc {
     font-size: 14px;
+}
+
+.category-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 61px;
+}
+
+.tabs {
+    font-size: 0;
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs>div {
+    display: none;
+    font-size: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4 {
+    display: grid;
+}
+
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 2px solid rgba(188, 188, 188, 0.984314);
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    width: calc(25% - 90px/4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabs>label .title {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.tabs>label .subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.941176);
+}
+
+.tabs>input[type="radio"]:checked+label {
+    border: 2px solid rgba(0, 168, 191, 0.984314);
+}
+
+.content {
+    width: 100%;
+}
+
+.categories .info-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.categories .costs {
+    display: flex;
+    justify-content: stretch;
+    gap: 10px;
+    list-style: none;
+}
+
+.categories .costs li {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.categories .price {
+    width: 193px;
+    background-color: #f2f2f2;
+    flex-grow: 0;
+}
+
+.categories .sale {
+    border: 1px solid #BCBCBC;
+}
+
+.categories .price-title {
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #6D6D6D;
+}
+
+.categories .price-value {
+    font-weight: 700;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #353535;
+}
+
+.categories .sale {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories .sale .for {
+    max-width: 50%;
+    text-align: right;
+    font-size: 13px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #6D6D6D
+}
+
+.categories .sale .sale-title {
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #6D6D6D;
+}
+
+.categories .sale .sale-value {
+    font-weight: 700;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #353535;
+}
+
+.categories .advs-title{
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 18px;
+    display: block;
+}
+
+.categories .advs{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.categories .advs li{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.categories .advs li img{
+    margin-right: 10px;
+}
+
+.categories .buttons{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.categories .text-title{
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #6D6D6D;
+}
+
+.categories .buttons a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 3px;
+    display: block;
 }
