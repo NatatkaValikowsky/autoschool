@@ -479,7 +479,7 @@ main .scroll img {
     color: #353535;
 }
 
-.categories .advs-title{
+.categories .advs-title {
     font-weight: 400;
     font-size: 20px;
     color: #000000;
@@ -487,40 +487,141 @@ main .scroll img {
     display: block;
 }
 
-.categories .advs{
+.categories .advs {
     list-style: none;
     padding-left: 0;
     margin-top: 10px;
 }
 
-.categories .advs li{
+.categories .advs li {
     display: flex;
     margin-bottom: 10px;
 }
 
-.categories .advs li img{
+.categories .advs li img {
     margin-right: 10px;
 }
 
-.categories .buttons{
+.categories .buttons {
     margin-top: 32px;
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
-.categories .text-title{
+.categories .text-title {
     font-weight: 400;
     font-size: 10px;
     text-transform: uppercase;
     color: #6D6D6D;
 }
 
-.categories .buttons a{
+.categories .buttons a {
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     color: #000000;
     margin-top: 3px;
     display: block;
+}
+
+.page-section-title {
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.study-advantages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.study-advantages li {
+    width: 220px;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+    border: 2px solid #BCBCBC;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+.steps li {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.steps li:nth-child(2),
+.steps li:nth-child(4),
+.steps li:nth-child(5),
+.steps li:nth-child(7),
+.steps li:nth-child(10) {
+    background: #F8F8F8;
+}
+
+.steps li .title {
+    font-weight: 700;
+    font-size: 29px;
+    color: #9A9A9A;
+}
+
+.steps li .title .num {
+    font-size: 42px;
+}
+
+.steps li .content {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    line-height: 16px;
+    margin-top: 20px;
+}
+
+.steps li .content span {
+    font-weight: 700;
+}
+
+.steps li:last-of-type {
+    grid-column: 3 / 5;
+    background-color: rgba(2, 160, 181, 0.2);
+    background-image: url('../images/last-step.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.steps li:last-of-type .title {
+    font-weight: 700;
+    font-size: 47px;
+    color: #000000;
+}
+
+.steps li:last-of-type .title .content {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 19px;
+    color: #000000;
 }
