@@ -342,6 +342,12 @@ main .scroll img {
     top: 30px;
 }
 
+@media(max-width: 500px){
+    .advantages-dots{
+        left: 2px;
+    }
+}
+
 .advantages-dots ul.slick-dots {
     display: flex;
     flex-direction: column;
@@ -439,6 +445,12 @@ main .scroll img {
     font-weight: bold;
 }
 
+@media(max-width: 500px){
+    .advantages-block .slider-content h3{
+        font-size: 40px;
+    }
+}
+
 .advantages-block .slider-content h3 .color {
     color: #02A0B5;
 }
@@ -447,6 +459,13 @@ main .scroll img {
     font-size: 25px;
     color: #888888;
     width: 272px;
+}
+
+@media(max-width: 500px){
+    .advantages-block .slider-content .desc{
+        font-size: 14px;
+        max-width: 200px;
+    }
 }
 
 .advantages-items {
