@@ -72,8 +72,10 @@ $(document).ready(function(){
 
   (function () {
     var toggle = document.querySelector('.nav-toggle');
+    var menu = document.querySelector('.mobile-menu');
     
     toggle.addEventListener('click', function(e) {
       this.classList.toggle('opened');
+      menu.classList.toggle('opened');
     });
   })();
