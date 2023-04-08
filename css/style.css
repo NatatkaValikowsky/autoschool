@@ -406,6 +406,12 @@ main .scroll img {
     }
 }
 
+@media(max-width: 370px) {
+    .advantages-dots{
+        bottom: 440px;
+    }
+}
+
 .advantages-dots ul.slick-dots {
     display: flex;
     flex-direction: column;
